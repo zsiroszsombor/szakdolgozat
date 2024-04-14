@@ -1,37 +1,14 @@
 import speech_recognition as sr
-import pyttsx3
 
-r = sr.Recognizer()
-
-def SpeakText(command):
-
-    engine = pyttsx3.init()
-    engine.say(command) 
-    engine.runAndWait()
-
-while(1):    
-     
-    try:
-         
-        with sr.Microphone() as source2:
-             
-            r.adjust_for_ambient_noise(source2, duration=0.2)
-             
-            audio2 = r.listen(source2)
-             
-            MyText = r.recognize_google(audio2)
-            MyText = MyText.lower()
- 
-            print(MyText)
-            f = open("oputput.txt", "a")
-            f.write(MyText)
-            f.write("\n")
-            f.close()
-            SpeakText(MyText)
-             
-    except sr.RequestError as e:
-        print("Could not request results; {0}".format(e))
-         
-    except sr.UnknownValueError:
-        print("unknown error occurred")
-
+def get_voice_input():
+  recognizer = sr.Recognizer()
+  with sr.Microphone() as source:
+    print("Speak your command:")
+    audio = recognizer.listen(source)
+  try:
+    text = recognizer.recognize_google(audio)
+    print("You said: " + text)
+    return text
+  except sr.UnknownValueError:
+    print("Could not understand audio")
+    return None
