@@ -3,6 +3,132 @@
   "createTimestamp": 1713626032588,
   "modifyTimestamp": 1713626032588,
   "uri": "file:/C:/git/szakdolgozat/qupath/project.qpproj",
-  "lastID": 0,
-  "images": []
+  "lastID": 1,
+  "images": [
+    {
+      "serverBuilder": {
+        "builderType": "pyramidize",
+        "builder": {
+          "builderType": "uri",
+          "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+          "uri": "file:/C:/git/szakdolgozat/segmentations/MSB-08631-03-06_seg.tif",
+          "args": [
+            "--series",
+            "0"
+          ],
+          "metadata": {
+            "name": "MSB-08631-03-06_seg.tif",
+            "width": 45816,
+            "height": 39963,
+            "sizeZ": 1,
+            "sizeT": 1,
+            "channelType": "DEFAULT",
+            "isRGB": false,
+            "pixelType": "INT32",
+            "levels": [
+              {
+                "downsample": 1.0,
+                "width": 45816,
+                "height": 39963
+              }
+            ],
+            "channels": [
+              {
+                "name": "Channel 1",
+                "color": -1
+              }
+            ],
+            "pixelCalibration": {
+              "pixelWidth": {
+                "value": 1.0,
+                "unit": "µm"
+              },
+              "pixelHeight": {
+                "value": 1.0,
+                "unit": "µm"
+              },
+              "zSpacing": {
+                "value": 1.0,
+                "unit": "z-slice"
+              },
+              "timeUnit": "SECONDS",
+              "timepoints": []
+            },
+            "preferredTileWidth": 45816,
+            "preferredTileHeight": 35
+          }
+        },
+        "metadata": {
+          "name": "MSB-08631-03-06_seg.tif",
+          "width": 45816,
+          "height": 39963,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": false,
+          "pixelType": "INT32",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 45816,
+              "height": 39963
+            },
+            {
+              "downsample": 4.0,
+              "width": 11454,
+              "height": 9990
+            },
+            {
+              "downsample": 16.0,
+              "width": 2863,
+              "height": 2497
+            },
+            {
+              "downsample": 64.0,
+              "width": 715,
+              "height": 624
+            },
+            {
+              "downsample": 256.0,
+              "width": 178,
+              "height": 156
+            },
+            {
+              "downsample": 1024.0,
+              "width": 44,
+              "height": 39
+            }
+          ],
+          "channels": [
+            {
+              "name": "Channel 1",
+              "color": -1
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "z-slice"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 256,
+          "preferredTileHeight": 35
+        }
+      },
+      "entryID": 1,
+      "randomizedName": "24af17e2-9e33-4e6f-89cf-8857bb413064",
+      "imageName": "MSB-08631-03-06_seg.tif",
+      "metadata": {}
+    }
+  ]
 }
